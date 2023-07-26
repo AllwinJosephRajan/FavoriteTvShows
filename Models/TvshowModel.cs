@@ -18,5 +18,10 @@ namespace FavTVShow2.Models
         [DataType(DataType.Url)]
         [Display(Name = "Imdb Link")]
         public string? ImdbUrl { get; set; }
+
+        [Required]
+        [DataType(DataType.ImageUrl)]
+        [Display(Name = "Poster")]
+        public string? ImageUrl { get; set; }
     }
 }
